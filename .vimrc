@@ -20,7 +20,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
-Bundle 'duff/vim-scratch'
 
 " snippet bundles
 
@@ -35,6 +34,8 @@ Bundle 'leshill/vim-json'
 
 " python bundles
 
+" markdown
+Bundle 'plasticboy/vim-markdown'
 
 " general 
 filetype plugin indent on     " required!
@@ -131,7 +132,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': [] }
 
 " vim-scratch 
-nmap <leader>s :Scratch<CR>
+nmap <leader>s :e ~/Copy/.__scratch__<CR>
 
 " bufexplorer
 nmap <leader>b :BufExplorer<CR>
@@ -153,6 +154,9 @@ nmap <Leader>a: :Tabularize /:<CR>
 vmap <Leader>a: :Tabularize /:<CR>
 nmap <Leader>a, :Tabularize /,\zs<CR>
 vmap <Leader>a, :Tabularize /,\zs<CR>
+
+" markdown 
+let g:vim_markdown_folding_disabled=1
 
 " colorscheme
 set background=dark
