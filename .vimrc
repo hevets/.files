@@ -1,8 +1,7 @@
-set nocompatible               " be iMproved
 " hevets vimrc 
 
 " Vundle requirements
-set nocompatible               " be iMproved
+" set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
@@ -148,3 +147,6 @@ nmap <Leader>a: :Tabularize /:<CR>
 vmap <Leader>a: :Tabularize /:<CR>
 nmap <Leader>a, :Tabularize /,\zs<CR>
 vmap <Leader>a, :Tabularize /,\zs<CR>
+
+" colorscheme
+set background=dark
