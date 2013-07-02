@@ -20,6 +20,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
+Bundle 'duff/vim-scratch'
 
 " snippet bundles
 
@@ -33,6 +34,7 @@ Bundle 'briancollins/vim-jst'
 Bundle 'leshill/vim-json'
 
 " python bundles
+
 
 " general 
 filetype plugin indent on     " required!
@@ -104,6 +106,7 @@ vnoremap > >gv
 " plugin keybindings
 map <F2> :NERDTreeToggle<CR>
 
+
 " nerdtree
 map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 map <leader>e :NERDTreeFind<CR>
@@ -126,6 +129,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': [] }
+
+" vim-scratch 
+nmap <leader>s :Scratch<CR>
 
 " bufexplorer
 nmap <leader>b :BufExplorer<CR>
