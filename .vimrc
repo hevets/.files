@@ -64,7 +64,7 @@ set wildmenu                    " show list instead of just completing
 set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
 set wildignore+=*/build/*,*.so,*.swp,*.zip,*/vendor/*,*/logs/*,*/cache/*,*/svn/*,*/.git/*
 set scrolljump=5                " lines to scroll when cursor leaves screen
-set scrolloff=3                 " minimum lines to keep above and below cursor
+set scrolloff=5                 " minimum lines to keep above and below cursor
 set nowrap                      " wrap long lines
 set autoindent                  " indent at the same level of the previous line
 set shiftwidth=2                " use indents of 2 spaces
