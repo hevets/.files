@@ -89,8 +89,8 @@ au BufNewFile,BufRead *.js nmap <Leader>rt :!clear & mocha % -R 'nyan'<CR>
 
 " python
 au BufNewFile,BufRead *.py nmap <leader>rr :!clear & python %<CR>            " python run file
-autocmd BufWritePost *.py call Pyflakes()
-autocmd BufWritePost *.py call Pep8()
+" autocmd BufWritePost *.py call Pyflakes()
+" autocmd BufWritePost *.py call Pep8()
 autocmd BufNewFile,BufRead *.py set textwidth=79
 autocmd BufNewFile,BufRead *.py set tabstop=4
 autocmd BufNewFile,BufRead *.py set softtabstop=4
@@ -139,11 +139,14 @@ let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': [] }
 
 " syntastic python settings 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_auto_loc_list=1
-let g:syntastic_loc_list_height=5
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" let g:syntastic_auto_loc_list=1
+" let g:syntastic_loc_list_height=5
+
+" python-mode
+
 
 " vim-scratch 
 nmap <leader>s :e ~/Copy/.__scratch__<CR>
