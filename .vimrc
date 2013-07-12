@@ -85,13 +85,9 @@ autocmd BufNewFile,BufRead *.sass set filetype=css
 au BufNewFile,BufRead *.hbs set filetype=html
 
 " javascript 
-au BufNewFile,BufRead *.js nmap <Leader>rr :!clear & node %<CR>              " node run file
-au BufNewFile,BufRead *.js nmap <Leader>rt :!clear & mocha % -R 'nyan'<CR>
+au BufNewFile,BufRead *.js nmap <Leader>r :!clear & node %<CR>              " node run file
 
 " python
-au BufNewFile,BufRead *.py nmap <leader>rr :!clear & python %<CR>            " python run file
-autocmd BufWritePost *.py call Pyflakes()
-autocmd BufWritePost *.py call Pep8()
 autocmd BufNewFile,BufRead *.py set textwidth=79
 autocmd BufNewFile,BufRead *.py set tabstop=4
 autocmd BufNewFile,BufRead *.py set softtabstop=4
@@ -132,14 +128,13 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 
 " syntastic
 let g:syntastic_auto_jump = 0
-" let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-" let g:syntastic_loc_list_height = 5
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': [] }
 
 " python-mode
+let g:pymode_folding=0
 
 " vim-scratch 
 nmap <leader>s :e ~/Copy/.__scratch__<CR>
