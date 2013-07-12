@@ -22,6 +22,9 @@ Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
 
 " snippet bundles
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
 
 " html/css bundles
 Bundle 'nono/vim-handlebars'
@@ -33,6 +36,7 @@ Bundle 'briancollins/vim-jst'
 Bundle 'leshill/vim-json'
 
 " python bundles
+Bundle 'klen/python-mode'
 
 " markdown
 Bundle 'plasticboy/vim-markdown'
@@ -85,12 +89,15 @@ au BufNewFile,BufRead *.js nmap <Leader>rt :!clear & mocha % -R 'nyan'<CR>
 
 " python
 au BufNewFile,BufRead *.py nmap <leader>rr :!clear & python %<CR>            " python run file
+autocmd BufWritePost *.py call Pyflakes()
+autocmd BufWritePost *.py call Pep8()
 autocmd BufNewFile,BufRead *.py set textwidth=79
 autocmd BufNewFile,BufRead *.py set tabstop=4
 autocmd BufNewFile,BufRead *.py set softtabstop=4
 autocmd BufNewFile,BufRead *.py set shiftwidth=4
 autocmd BufNewFile,BufRead *.py set expandtab
 autocmd BufNewFile,BufRead *.py set shiftround
+autocmd BufNewFile,BufRead *.py set autoindent
 
 " keybindings
 let mapleader = ','
@@ -130,6 +137,13 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': [] }
+
+" syntastic python settings 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_auto_loc_list=1
+let g:syntastic_loc_list_height=5
 
 " vim-scratch 
 nmap <leader>s :e ~/Copy/.__scratch__<CR>
