@@ -71,6 +71,7 @@ set shiftwidth=2                " use indents of 2 spaces
 set expandtab                   " tabs are spaces, not tabs
 set tabstop=2                   " an indentation every four columns
 set softtabstop=2               " let backspace delete indent
+verbose set cursorline
 
 " vim swap disable
 set nobackup
