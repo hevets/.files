@@ -21,6 +21,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'ervandew/supertab'
 
 " snippet bundles
 Bundle "MarcWeber/vim-addon-mw-utils"
