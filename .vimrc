@@ -20,11 +20,13 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
+Bundle 'airblade/vim-gitgutter'
 
 " snippet bundles
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
 
 " html/css bundles
 Bundle 'nono/vim-handlebars'
