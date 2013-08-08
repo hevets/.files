@@ -168,4 +168,5 @@ vmap <Leader>a, :Tabularize /,\zs<CR>
 let g:vim_markdown_folding_disabled=1
 
 " colorscheme
+colorscheme desert
 set background=dark
