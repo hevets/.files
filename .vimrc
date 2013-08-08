@@ -52,7 +52,7 @@ set mouse=a                 " automatically enable mouse usage
 scriptencoding utf-8
 set hidden " allow buffer switching without saving
 set visualbell
-set cc=80
+" set cc=80
 set ruler                   " show the ruler
 set showcmd                 " show partial commands in status line and
 set backspace=indent,eol,start
