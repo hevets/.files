@@ -75,6 +75,7 @@ set expandtab                   " tabs are spaces, not tabs
 set tabstop=2                   " an indentation every four columns
 set softtabstop=2               " let backspace delete indent
 verbose set cursorline
+set shortmess=AIT
 
 " vim swap disable
 set nobackup
