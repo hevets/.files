@@ -81,6 +81,9 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+" fixes slowness on <Shift> + O
+set timeout timeoutlen=5000 ttimeoutlen=100
+
 " files
 autocmd! bufwritepost .vimrc source %
 autocmd BufEnter * cd %:p:h " used to change wd to curr file
@@ -89,7 +92,7 @@ autocmd BufNewFile,BufRead *.sass set filetype=css
 au BufNewFile,BufRead *.hbs set filetype=html
 
 " javascript 
-au BufNewFile,BufRead *.js nmap <Leader>r :!clear & node %<CR>              " node run file
+au BufNewFile,BufRead *.js nmap <Leader>r :!clear & node %<CR>
 
 " python
 autocmd BufNewFile,BufRead *.py set textwidth=79
@@ -170,3 +173,4 @@ let g:vim_markdown_folding_disabled=1
 " colorscheme
 colorscheme desert
 set background=dark
+
