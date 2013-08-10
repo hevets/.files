@@ -28,8 +28,11 @@ os.system("git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle")
 os.system('git submodule update --init')
 os.system('vim +BundleInstall +qall')
 
+
+# I like to use Command + Shift + N (new session)
+# and Command + Shift + T (resume target session)
 print "install tmux with homebrew"
 print "tmux bindings"
 print "Add to iterm2 key bindings"
-print "Send: 'tmux new -s hevets'"
-print "Send: 'tmux a -t hevets'"
+print "tmux new -s hevets"
+print "tmux a -t hevets"
