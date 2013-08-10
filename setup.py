@@ -13,6 +13,7 @@ os.system("rm ~/.gitconfig")
 os.system("rm ~/.jshintrc")
 os.system("rm ~/.vimrc")
 os.system("rm ~/.zshrc")
+os.system("rm ~/.tmux.conf")
 
 # create links to config files
 os.system("ln -s ~/.files/.ackrc ~/.ackrc")
@@ -20,6 +21,7 @@ os.system("ln -s ~/.files/.gitconfig ~/.gitconfig")
 os.system("ln -s ~/.files/.jshintrc ~/.jshintrc")
 os.system("ln -s ~/.files/.vimrc ~/.vimrc")
 os.system("ln -s ~/.files/.zshrc ~/.zshrc")
+os.system("ln -s ~/.files/.tmux.conf ~/.tmux.conf")
 
 # clone in vundle & zsh
 os.system("git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle")
