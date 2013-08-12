@@ -22,7 +22,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'Raimondi/delimitMate'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'ervandew/supertab'
-Bundle 'spolu/dwm.vim'
 Bundle 'mileszs/ack.vim'
 
 " snippet bundles
