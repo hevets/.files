@@ -5,7 +5,7 @@ import os
 os.system('clear')
 
 # remove .vim settings
-os.system("rm -r ~/.vim")
+os.system("rm -rf ~/.vim")
 
 # remove all personal config files
 os.system("rm ~/.ackrc")
