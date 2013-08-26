@@ -24,6 +24,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'ervandew/supertab'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/vim-easymotion'
 
 " snippet bundles
 Bundle "MarcWeber/vim-addon-mw-utils"
