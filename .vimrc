@@ -23,6 +23,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'ervandew/supertab'
 Bundle 'mileszs/ack.vim'
+Bundle 'Lokaltog/vim-powerline'
 
 " snippet bundles
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -51,6 +52,7 @@ filetype indent plugin on
 set modeline
 set mouse=a                 " automatically enable mouse usage
 scriptencoding utf-8
+set encoding=utf-8
 set hidden " allow buffer switching without saving
 set visualbell
 " set cc=80
@@ -171,6 +173,9 @@ vmap <Leader>a, :Tabularize /,\zs<CR>
 
 " markdown 
 let g:vim_markdown_folding_disabled=1
+
+" powerline
+let g:Powerline_symbols = 'fancy'
 
 " colorscheme
 colorscheme desert
