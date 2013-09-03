@@ -37,7 +37,7 @@ unsetopt correct_all
 # bindkey -v # vim bindings
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/usr/local/heroku:/usr/local/heroku/bin:/opt/mongodb/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/usr/local/heroku:/usr/local/heroku/bin
 
 alias runserver='python manage.py runserver'
 alias syncdb='python manage.py syncdb'
@@ -48,9 +48,9 @@ alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g $*'
 export TERM="xterm-256color"
 
 # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin 
+PATH=$PATH:$HOME/.rvm/bin
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# Add path for nvm
+PATH=$PATH:$HOME/.nvm/v0.10.17/bin
 
 source ~/.nvm/nvm.sh
