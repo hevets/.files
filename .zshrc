@@ -37,7 +37,7 @@ unsetopt correct_all
 # bindkey -v # vim bindings
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/usr/local/heroku:/usr/local/heroku/bin
+# export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/usr/local/heroku:/usr/local/heroku/bin
 
 alias runserver='python manage.py runserver'
 alias syncdb='python manage.py syncdb'
