@@ -53,4 +53,7 @@ PATH=$PATH:$HOME/.rvm/bin
 # Add path for nvm
 PATH=$PATH:$HOME/.nvm/v0.10.17/bin
 
+# Add homebrew python to path
+export PATH=/usr/local/share/python:$PATH
+
 source ~/.nvm/nvm.sh
