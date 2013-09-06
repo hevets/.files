@@ -1,4 +1,6 @@
 {
-  "laxcomma": true,
-  "proto": true
+  "esnext": false,
+  "unused": true,
+  "strict": true,
+  "node": true
 }

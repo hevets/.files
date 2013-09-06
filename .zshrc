@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="kolo"
+ZSH_THEME="random"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -34,26 +34,21 @@ plugins=(git python brew sublime)
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
-# bindkey -v # vim bindings
-
-# Customize to your needs...
-# export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/sbin:/usr/local/heroku:/usr/local/heroku/bin
-
 alias runserver='python manage.py runserver'
 alias syncdb='python manage.py syncdb'
 alias celeryd='python manage.py celeryd --loglevel=info'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g $*'
 
+
 # Terminal 256 colors
 export TERM="xterm-256color"
 
-# Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
 
-# Add path for nvm
+# nvm
 PATH=$PATH:$HOME/.nvm/v0.10.17/bin
+source ~/.nvm/nvm.sh
 
-# Add homebrew python to path
+
+# homebrew python
 export PATH=/usr/local/share/python:$PATH
 
-source ~/.nvm/nvm.sh
