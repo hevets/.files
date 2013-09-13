@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="random"
+ZSH_THEME="lambda"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -29,7 +29,7 @@ ZSH_THEME="random"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git python brew sublime)
+plugins=(git python brew sublime virutalenv virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -39,9 +39,12 @@ alias syncdb='python manage.py syncdb'
 alias celeryd='python manage.py celeryd --loglevel=info'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g $*'
 
-
 # Terminal 256 colors
 export TERM="xterm-256color"
+
+
+# homebrew path
+export PATH=/usr/local/bin:$PATH
 
 
 # nvm
