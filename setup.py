@@ -25,5 +25,5 @@ os.system("ln -s ~/.files/.bashrc ~/.bashrc")
 
 # clone in vundle & zsh
 os.system("git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle")
-os.system('git submodule update --init')
+# os.system('git submodule update --init')
 os.system('vim +BundleInstall +qall')
