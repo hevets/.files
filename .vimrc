@@ -2,13 +2,16 @@
 
 " Vundle requirements
 " set nocompatible               " be iMproved
-filetype off                   " required!
+filetype off                     " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " vundle !!!
 Bundle 'gmarik/vundle'
+
+" color scheme
+Bundle 'quanganhdo/grb256'
 
 " general bundles
 Bundle 'scrooloose/nerdtree'
@@ -89,6 +92,8 @@ set noswapfile
 set timeout timeoutlen=5000 ttimeoutlen=100
 
 " files
+" Jump to last cursor position unless it's invalid or in an event handler
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
 autocmd! bufwritepost .vimrc source %
 autocmd BufEnter * cd %:p:h " used to change wd to curr file
 autocmd BufNewFile,BufRead *.scss set filetype=css
@@ -178,6 +183,7 @@ let g:vim_markdown_folding_disabled=1
 let g:Powerline_symbols = 'fancy'
 
 " colorscheme
-colorscheme desert
+set t_Co=256 " 256 colors
 set background=dark
+colorscheme grb256
 

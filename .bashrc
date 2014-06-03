@@ -7,6 +7,10 @@ alias wgd='watch -n5 "git diff"'
 alias nodewatch='nodemon server --ignore node_modules/ --ignore bower_components/ --ignore vendor/'
 alias gw='grunt browserify:teacher --watchify'
 
+quickdump() {
+  echo "$1" 
+  #mongodump > backup.$(date +'%Y-%m-%d').json
+}
 # Git branch in prompt.
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -20,3 +24,5 @@ fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+ulimit -n 10240
