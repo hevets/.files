@@ -27,7 +27,6 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'ervandew/supertab'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'terryma/vim-multiple-cursors'
 
 " snippet bundles
@@ -55,6 +54,7 @@ Bundle 'plasticboy/vim-markdown'
 syntax on
 filetype indent plugin on
 " modelines (comments that set vim options on a per-file basis)
+set title
 set modeline
 set modelines=3
 set mouse=a                 " automatically enable mouse usage
@@ -113,7 +113,7 @@ set timeout timeoutlen=5000 ttimeoutlen=100
 
 " Prevent Vim from clobbering the scrollback buffer. See
 " http://www.shallowsky.com/linux/noaltscreen.html
-set t_ti= t_te=
+" set t_ti= t_te=
 
 " general keybindings
 let mapleader = ','
@@ -218,9 +218,6 @@ vmap <leader>a, :Tabularize /,\zs<CR>
 
 " markdown 
 let g:vim_markdown_folding_disabled=1
-
-" powerline
-" let g:Powerline_symbols = 'fancy'
 
 " colorscheme
 set t_Co=256 " 256 colors
