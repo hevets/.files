@@ -28,6 +28,7 @@ Bundle 'ervandew/supertab'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'terryma/vim-multiple-cursors'
 
 " snippet bundles
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -206,14 +207,14 @@ let g:ctrlp_custom_ignore = {
     \ 'file': '\.swp$\|\.exe$\|\.so$\|\.dll$\|\.swo$\|\.lock$\|\.gitignore$\|\.project$' }
 
 " tabular
-nmap <Leader>aa :Tabularize /=<CR>
-vmap <Leader>aa :Tabularize /=<CR>
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a: :Tabularize /:<CR>
-vmap <Leader>a: :Tabularize /:<CR>
-nmap <Leader>a, :Tabularize /,\zs<CR>
-vmap <Leader>a, :Tabularize /,\zs<CR>
+nmap <leader>aa :Tabularize /=<CR>
+vmap <leader>aa :Tabularize /=<CR>
+nmap <leader>a= :Tabularize /=<CR>
+vmap <leader>a= :Tabularize /=<CR>
+nmap <leader>a: :Tabularize /:<CR>
+vmap <leader>a: :Tabularize /:<CR>
+nmap <leader>a, :Tabularize /,\zs<CR>
+vmap <leader>a, :Tabularize /,\zs<CR>
 
 " markdown 
 let g:vim_markdown_folding_disabled=1
