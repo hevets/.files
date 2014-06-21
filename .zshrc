@@ -7,6 +7,19 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="lambda"
 
+alias mongo24="/usr/local/Cellar/mongodb/2.4.9/bin/mongo"
+alias mongodump24="/usr/local/Cellar/mongodb/2.4.9/bin/mongodump"
+alias mongorestore24="/usr/local/Cellar/mongodb/2.4.9/bin/mongorestore"
+alias mongod24="/usr/local/Cellar/mongodb/2.4.9/bin/mongod"
+
+alias gw="grunt build:teacher --watchify "
+alias sw="fswatch client/stylesheets 'grunt sass:teacher; grunt autoprefixer:teacher'"
+
+# ensure we can watchify stuff with fg
+ulimit -n 10240
+
+alias ll="ls -al"
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -48,7 +61,7 @@ ZSH_THEME="lambda"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git sublime mvn gradle)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -72,3 +85,6 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/hevets/.gvm/bin/gvm-init.sh" ]] && source "/Users/hevets/.gvm/bin/gvm-init.sh"

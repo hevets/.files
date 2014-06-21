@@ -26,3 +26,6 @@ fi
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ulimit -n 10240
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/hevets/.gvm/bin/gvm-init.sh" ]] && source "/Users/hevets/.gvm/bin/gvm-init.sh"
