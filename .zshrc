@@ -61,7 +61,7 @@ alias ll="ls -al"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git sublime mvn gradle)
+plugins=(git sublime mvn gradle vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
