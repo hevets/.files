@@ -7,17 +7,6 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="jreese"
 
-alias mongo24="/usr/local/Cellar/mongodb/2.4.9/bin/mongo"
-alias mongodump24="/usr/local/Cellar/mongodb/2.4.9/bin/mongodump"
-alias mongorestore24="/usr/local/Cellar/mongodb/2.4.9/bin/mongorestore"
-alias mongod24="/usr/local/Cellar/mongodb/2.4.9/bin/mongod"
-
-alias gw="grunt build:teacher --watchify "
-alias sw="fswatch client/stylesheets 'grunt sass:teacher; grunt autoprefixer:teacher'"
-
-# ensure we can watchify stuff with fg
-ulimit -n 10240
-
 alias ll="ls -al"
 
 # Example aliases

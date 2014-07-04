@@ -222,5 +222,5 @@ let g:vim_markdown_folding_disabled=1
 " colorscheme
 set t_Co=256 " 256 colors
 set background=dark
-colorscheme grb256
+colorscheme desert
 
