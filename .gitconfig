@@ -8,5 +8,3 @@
 [core]
   editor = /usr/bin/vim
 	excludesfile = /Users/hevets/.gitignore_global
-[push]
-  default = simple
