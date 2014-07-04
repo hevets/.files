@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="lambda"
+ZSH_THEME="jreese"
 
 alias mongo24="/usr/local/Cellar/mongodb/2.4.9/bin/mongo"
 alias mongodump24="/usr/local/Cellar/mongodb/2.4.9/bin/mongodump"
