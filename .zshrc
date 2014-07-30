@@ -75,5 +75,9 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+export PATH=/opt/android-studio/bin:$PATH
+export PATH=/opt/android-studio/sdk/tools/lib:$PATH
+export PATH=/opt/android-studio/sdk/platform-tools:$PATH
+
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/hevets/.gvm/bin/gvm-init.sh" ]] && source "/Users/hevets/.gvm/bin/gvm-init.sh"
