@@ -2,5 +2,3 @@
 html=.handlebars,.hbs,.ejs
 --type-set
 mustache=.html.haml,.handlebars,.hbs
-
-
