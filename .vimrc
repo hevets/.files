@@ -1,4 +1,4 @@
-" hevets vimrc 
+" hevets vimrc bitbucket has my real config now
 
 " Vundle requirements
 set nocompatible                 " be iMproved
